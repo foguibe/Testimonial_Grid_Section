@@ -69,12 +69,6 @@ This project demonstrates the following skills:
 
 3. Feel free to modify and extend the project to suit your needs or apply these demonstrated skills to your own projects.
 
-## Author
-
-- [Your Name](#) - [GitHub Profile](#) - [LinkedIn Profile](#)
-
----
-
 This project was created as a coding challenge by [Frontend Mentor](https://www.frontendmentor.io). It was coded by [Fortune Oguibe](https://github.com/foguibe).
 
 ```
