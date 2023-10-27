@@ -1,0 +1,192 @@
+/***************************************************CSS RESET***********************************************/
+/*
+1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+    }
+    /*
+    2. Remove default margin
+    */
+    * {
+    margin: 0;
+    }
+    /*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+    */
+    body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    }
+    /*
+    5. Improve media defaults
+    */
+    img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+    }
+    /*
+    6. Remove built-in form typography styles
+    */
+    input, button, textarea, select {
+    font: inherit;
+    }
+    /*
+    7. Avoid text overflows
+    */
+    p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+    }
+    /*
+    8. Create a root stacking context
+    */
+    #root, #__next {
+    isolation: isolate;
+    }
+    
+    /************************************************MY STYLING**********************************************/
+    body {
+        background-color: #e7eaf6;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        font-family: 'Ubuntu', sans-serif;
+    }
+    
+    main {
+        margin-top: 100px;
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #main-container {
+        max-width: 1200px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 30px;
+    }
+    
+    .card-info img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+    
+    #daniel {
+        background-color: hsl(263, 55%, 52%);
+        grid-column: 1/3;
+        position: relative;
+        background-image: url("images/bg-pattern-quotation.svg");
+        background-repeat: no-repeat;
+        background-position: top right;
+    }
+    
+    #jonathan {
+        background-color: hsl(217, 19%, 35%);
+    }
+    
+    #kira {
+        background-color: hsl(0, 0%, 100%);
+        grid-row: -3/-1;
+        grid-column: 4/5;
+    }
+    
+    #jeanette {
+        background-color: hsl(0, 0%, 100%);
+    }
+    
+    #patrick {
+        background-color: hsl(219, 29%, 14%);
+        grid-column: 2/4;
+    }
+    
+    .card p {
+        color: hsl(0, 0%, 81%);
+    }
+    
+    .white h3 {
+        color: hsl(217, 19%, 35%);
+    }
+    
+    .white h2 {
+        color: hsl(217, 19%, 35%);
+    }
+    
+    .white {
+        box-shadow: 1px 0px 10px 2px hsl(210, 46%, 95%);
+    }
+    
+    .white p {
+        color: hsl(217, 19%, 35%);
+    }
+    
+    #patrick h2, #jonathan h2, #daniel h2 {
+        color: hsl(0, 0%, 100%);
+    }
+    
+    #patrick h3, #jonathan h3, #daniel h3 {
+        color: hsl(0, 0%, 100%);
+    }
+    
+    .card {
+        padding: 30px;
+        border-radius: 10px;
+    }
+    
+    #patrick img {
+        border: 2px solid hsl(263, 55%, 52%);
+    }
+    
+    #daniel .card-info img {
+        border: 2px solid hsl(263, 55%, 82%);
+    }
+    
+    .user-info h2 {
+        font-size: 16px;
+    }
+    
+    .user-info p {
+        font-size: 14px;
+    }
+    
+    .card {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .card > p {
+        font-size: 13px;
+    }
+    
+    .card-info {
+        display: flex;
+        gap: 20px;
+    }
+    
+    footer {
+        text-align: center;
+        padding-top: 100px;
+    }
+    
+    footer p {
+        font-size: 12px;
+    }
+    
+    @media screen  and (max-width: 1500px) {
+        body {
+            margin: 20px;
+        }
+    }
+    
+    @media screen and (max-width: 1090px) {
+        #main-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
